@@ -16,10 +16,12 @@ spring:
       password: @nacos.password@
       discovery:
         server-addr: ${NACOS_HOST:pig-register}:${NACOS_PORT:8848}
+        namespace: ${NACOS_NAMESPACE:shenqiong}
         metadata:
           management.context-path: ${server.servlet.context-path}/actuator
       config:
         server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        namespace: ${spring.cloud.nacos.discovery.namespace}
   config:
     import:
       - optional:nacos:application-@profiles.active@.yml

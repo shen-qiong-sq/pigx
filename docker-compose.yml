@@ -88,3 +88,11 @@ services:
     image: pig-job
     ports:
       - 5004:5004
+
+  wechatapp:
+    build:
+      context: pigx/wechatapp/wechatapp-biz
+    restart: always
+    container_name: wechatapp
+    hostname: wechatapp
+    image: wechatapp

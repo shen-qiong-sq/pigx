@@ -13,6 +13,9 @@ spring:
       password: @nacos.password@
       discovery:
         server-addr: ${NACOS_HOST:pig-register}:${NACOS_PORT:8848}
+        namespace: ${NACOS_NAMESPACE:shenqiong}
+      config:
+        namespace: ${spring.cloud.nacos.discovery.namespace}
 
 management:
   endpoints:
