@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.pig4cloud</groupId>
+		<artifactId>pigx</artifactId>
+		<version>3.6.5</version>
+	</parent>
+
+	<artifactId>wechatapp</artifactId>
+    <description>微信小程序</description>
+	<packaging>pom</packaging>
+
+	<!--项目子模块-->
+	<modules>
+		<module>wechatapp-api</module>
+		<module>wechatapp-biz</module>
+	</modules>
+
+</project>
